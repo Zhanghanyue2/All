@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel NZ - Explore Pristine New Zealand</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Background Slideshow -->
+    <div class="slideshow">
+        <div class="slide active" style="background-image: url('turn1.jpg')"></div>
+        <div class="slide" style="background-image: url('turn2.jpg')"></div>
+        <div class="slide" style="background-image: url('turn3.jpg')"></div>
+        <div class="slide" style="background-image: url('turn4.jpg')"></div>
+        <div class="slide" style="background-image: url('turn5.jpg')"></div>
+        <div class="slide" style="background-image: url('turn6.jpg')"></div>
+        <div class="slide" style="background-image: url('turn7.jpg')"></div>
+        <div class="slide" style="background-image: url('turn8.jpg')"></div>
+        <div class="slide" style="background-image: url('turn9.jpg')"></div>
+    </div>
+
+    <!-- Navigation -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="HOME.html" class="logo">
+                    <i class="fas fa-compass"></i>
+                    Travel <span class="logo-nz">NZ</span>
+                </a>
+                
+                <!-- 天气信息区域 -->
+                <div class="weather-info">
+                    <i class="fas fa-sun weather-icon"></i>
+                    <div class="weather-details">
+                        <span class="weather-location">AUCKLAND</span>
+                        <span class="weather-temp">18°C</span>
+                    </div>
+                </div>
+                
+                <!-- 导航链接 -->
+                <ul class="nav-links">
+                    <li><a href="HOME.html" class="nav-link active">Home</a></li>
+                    <li><a href="TOUR.html" class="nav-link">Tours</a></li>
+                    <li><a href="CONTACT.html" class="nav-link">Contact</a></li>
+                </ul>
+                
+                <!-- 移动端菜单按钮 -->
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Home page content -->
+    <section id="home" class="page active">
+        <div class="container">
+            <!-- Hero section -->
+            <div class="hero">
+                <div class="hero-content">
+                    <h1>Explore Pristine New Zealand</h1>
+                    <p>Professional, safe, and personalized New Zealand travel experiences for a worry-free journey</p>
+                    <a href="TOUR.html" class="btn btn-accent">Explore NZ Tours <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- Company intro -->
+            <div class="intro-section">
+                <h2 class="intro-title">About Travel NZ</h2>
+                <div class="intro-content">
+                    <p>Travel NZ is a leading New Zealand travel service company, specializing in providing professional and personalized travel experiences for global visitors.</p>
+                    <p>We have an experienced team of local guides who deeply understand New Zealand's natural landscapes, cultural history, and best travel routes.</p>
+                    <p>Whether you're visiting for the first time or returning to explore more, we can tailor the perfect travel plan for you to deeply experience New Zealand's unique charm.</p>
+                </div>
+            </div>
+
+            <!-- Featured tours -->
+            <h2 class="section-title">Featured Tours</h2>
+            
+            <!-- Region filters -->
+            <div class="region-filters">
+                <button class="region-btn active" data-region="all">
+                    <i class="fas fa-globe-asia"></i> All Islands
+                </button>
+                <button class="region-btn" data-region="north">
+                    <i class="fas fa-mountain"></i> North Island
+                </button>
+                <button class="region-btn" data-region="south">
+                    <i class="fas fa-tree"></i> South Island
+                </button>
+            </div>
+            
+            <div class="tour-cards">
+                <!-- Tour 1 - North Island Classic -->
+                <div class="tour-card" data-region="north">
+                    <div class="tour-image" style="background-image: url('North.jpg')"></div>
+                    <div class="tour-content">
+                        <div class="tour-tags">
+                            <div class="tour-tag">North Island</div>
+                            <div class="tour-tag">🏙️ City Tour</div>
+                            <div class="tour-tag accent">💰 Installment Available</div>
+                            <div class="tour-tag">📍 North Island</div>
+                        </div>
+                        <div class="tour-duration">
+                            <i class="far fa-calendar-alt"></i> Duration: 7 Days / 6 Nights
+                        </div>
+                        <h3 class="tour-title">North Island Cultural Journey</h3>
+                        <p class="tour-description">Explore three major cities of the North Island: Auckland, Rotorua, and Wellington, experiencing New Zealand's diverse culture.</p>
+                        <div class="tour-price"><i class="fas fa-tag"></i> $14,800 <span>per person</span></div>
+                        <div class="tour-buttons">
+                            <a href="TOUR.html#north-detail" class="btn btn-outline">Tour Details</a>
+                            <a href="CONTACT.html" class="btn">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tour 2 - South Island Nature -->
+                <div class="tour-card" data-region="south">
+                    <div class="tour-image" style="background-image: url('South.jpg')"></div>
+                    <div class="tour-content">
+                        <div class="tour-tags">
+                            <div class="tour-tag">South Island</div>
+                            <div class="tour-tag">🏞️ Natural Scenery</div>
+                            <div class="tour-tag">📸 Photography Hotspot</div>
+                            <div class="tour-tag">📍 South Island</div>
+                        </div>
+                        <div class="tour-duration">
+                            <i class="far fa-calendar-alt"></i> Duration: 5 Days / 4 Nights
+                        </div>
+                        <h3 class="tour-title">South Island Nature Experience</h3>
+                        <p class="tour-description">Deeply explore Christchurch and surrounding natural landscapes, experiencing the pristine beauty of New Zealand.</p>
+                        <div class="tour-price"><i class="fas fa-tag"></i> $11,200 <span>per person</span></div>
+                        <div class="tour-buttons">
+                            <a href="TOUR.html#south-detail" class="btn btn-outline">Tour Details</a>
+                            <a href="CONTACT.html" class="btn">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tour 3 - Full Island Tour -->
+                <div class="tour-card" data-region="all">
+                    <div class="tour-image" style="background-image: url('All.jpg')"></div>
+                    <div class="tour-content">
+                        <div class="tour-tags">
+                            <div class="tour-tag">Full Island</div>
+                            <div class="tour-tag">🌋 Geothermal Wonders</div>
+                            <div class="tour-tag accent">💰 Installment Available</div>
+                            <div class="tour-tag">📍 Both Islands</div>
+                        </div>
+                        <div class="tour-duration">
+                            <i class="far fa-calendar-alt"></i> Duration: 12 Days / 11 Nights
+                        </div>
+                        <h3 class="tour-title">New Zealand Grand Tour</h3>
+                        <p class="tour-description">Complete experience of New Zealand's North and South Island highlights, one journey to explore all of New Zealand's diverse landscapes.</p>
+                        <div class="tour-price"><i class="fas fa-tag"></i> $21,500 <span>per person</span></div>
+                        <div class="tour-buttons">
+                            <a href="TOUR.html#all-detail" class="btn btn-outline">Tour Details</a>
+                            <a href="CONTACT.html" class="btn">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Trust building section -->
+            <div class="trust-section">
+                <h2 class="section-title">Why Choose Us</h2>
+                <div class="trust-items">
+                    <div class="trust-item">
+                        <div class="trust-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Safety First</h3>
+                        <p>24 hours emergency support, professionally certified guides</p>
+                    </div>
+                    <div class="trust-item">
+                        <div class="trust-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h3>English Service</h3>
+                        <p>All English-speaking guides and customer service</p>
+                    </div>
+                    <div class="trust-item">
+                        <div class="trust-icon">
+                            <i class="fas fa-money-bill-wave"></i>
+                        </div>
+                        <h3>Transparent Pricing</h3>
+                        <p>No hidden fees, installment payment available</p>
+                    </div>
+                    <div class="trust-item">
+                        <div class="trust-icon">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <h3>Visa Assistance</h3>
+                        <p>Professional visa guidance to improve approval rates</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Travel NZ</h3>
+                    <p>Specializing in providing professional, safe, and personalized New Zealand travel experiences for global visitors.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-weixin"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-phone-alt"></i> English Service: +64 9 123 4567</p>
+                    <p><i class="fas fa-clock"></i> Business Hours: Monday-Friday 9:00-18:00</p>
+                    <p><i class="fas fa-envelope"></i> Email: information@travelnz.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Address: 123 Queen Street, Auckland, New Zealand</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>WeChat Consultation</h3>
+                    <p>Scan to add travel consultant</p>
+                    <div class="wechat-code">
+                        <img src="QRcode.jpg" alt="WeChat QR Code">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>© 2025 Travel NZ All Rights Reserved | Officially Certified New Zealand Ground Operator</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating consultation button -->
+    <div class="float-button">
+        <i class="fab fa-weixin"></i>
+        WeChat
+    </div>
+
+    <script>
+        // 设置艺术感页眉渐变
+        function setArtisticHeader() {
+            const colors = [
+                '#A8BEDF', '#B7D5C6', '#A1C2B1', 
+                '#B7D5C6', '#C7D5E8', '#E8C49A', '#BA9B92'
+            ];
+            
+            // 随机打乱颜色数组
+            const shuffledColors = [...colors].sort(() => Math.random() - 0.5);
+            
+            // 创建渐变字符串
+            const gradient = `linear-gradient(135deg, 
+                ${shuffledColors[0]} 0%, 
+                ${shuffledColors[1]} 25%, 
+                ${shuffledColors[2]} 50%, 
+                ${shuffledColors[3]} 75%, 
+                ${shuffledColors[4]} 100%)`;
+            
+            // 应用到页眉
+            document.querySelector('header').style.background = gradient;
+        }
+
+        // 背景轮播功能
+        document.addEventListener('DOMContentLoaded', function() {
+            // 设置艺术感页眉
+            setArtisticHeader();
+            
+            const slides = document.querySelectorAll('.slide');
+            let currentSlide = 0;
+            
+            // 从localStorage获取上次的轮播索引，如果没有则从0开始
+            const savedSlideIndex = localStorage.getItem('currentSlideIndex');
+            if (savedSlideIndex !== null) {
+                currentSlide = parseInt(savedSlideIndex);
+                // 确保索引在有效范围内
+                if (currentSlide >= slides.length) {
+                    currentSlide = 0;
+                }
+                // 设置初始激活的幻灯片
+                slides.forEach((slide, index) => {
+                    slide.classList.remove('active');
+                    if (index === currentSlide) {
+                        slide.classList.add('active');
+                    }
+                });
+            }
+            
+            function nextSlide() {
+                slides[currentSlide].classList.remove('active');
+                currentSlide = (currentSlide + 1) % slides.length;
+                slides[currentSlide].classList.add('active');
+                
+                // 保存当前轮播索引到localStorage
+                localStorage.setItem('currentSlideIndex', currentSlide);
+            }
+            
+            // 每3秒切换一次背景
+            setInterval(nextSlide, 3000);
+            
+            // 区域过滤功能
+            const regionButtons = document.querySelectorAll('.region-btn');
+            
+            // 添加点击事件到区域过滤按钮
+            regionButtons.forEach(button => {
+                button.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const region = this.getAttribute('data-region');
+                    
+                    // 更新按钮激活状态
+                    regionButtons.forEach(btn => btn.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    // 过滤并显示相应的旅游项目
+                    filterToursByRegion(region);
+                });
+            });
+            
+            // 按区域过滤旅游项目
+            function filterToursByRegion(region) {
+                const tourCards = document.querySelectorAll('.tour-card');
+                
+                tourCards.forEach(card => {
+                    if (region === 'all' || card.getAttribute('data-region') === region) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            }
+            
+            // 导航栏滚动效果
+            window.addEventListener('scroll', function() {
+                const header = document.querySelector('header');
+                if (window.scrollY > 50) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            });
+            
+            // 移动端菜单功能
+            const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+            const navLinks = document.querySelector('.nav-links');
+            
+            mobileMenuBtn.addEventListener('click', function() {
+                navLinks.classList.toggle('mobile-active');
+            });
+        });
+    </script>
+</body>
+</html>

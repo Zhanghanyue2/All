@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel NZ - Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Background Slideshow -->
+    <div class="slideshow">
+        <div class="slide active" style="background-image: url('turn1.jpg')"></div>
+        <div class="slide" style="background-image: url('turn2.jpg')"></div>
+        <div class="slide" style="background-image: url('turn3.jpg')"></div>
+        <div class="slide" style="background-image: url('turn4.jpg')"></div>
+        <div class="slide" style="background-image: url('turn5.jpg')"></div>
+        <div class="slide" style="background-image: url('turn6.jpg')"></div>
+        <div class="slide" style="background-image: url('turn7.jpg')"></div>
+        <div class="slide" style="background-image: url('turn8.jpg')"></div>
+        <div class="slide" style="background-image: url('turn9.jpg')"></div>
+    </div>
+
+    <!-- Navigation -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="HOME.html" class="logo">
+                    <i class="fas fa-compass"></i>
+                    Travel <span class="logo-nz">NZ</span>
+                </a>
+                
+                <!-- 天气信息区域 -->
+                <div class="weather-info">
+                    <i class="fas fa-sun weather-icon"></i>
+                    <div class="weather-details">
+                        <span class="weather-location">AUCKLAND</span>
+                        <span class="weather-temp">18°C</span>
+                    </div>
+                </div>
+                
+                <!-- 导航链接 -->
+                <ul class="nav-links">
+                    <li><a href="HOME.html" class="nav-link">Home</a></li>
+                    <li><a href="TOUR.html" class="nav-link">Tours</a></li>
+                    <li><a href="CONTACT.html" class="nav-link active">Contact</a></li>
+                </ul>
+                
+                <!-- 移动端菜单按钮 -->
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contact page -->
+    <section id="contact" class="page active">
+        <div class="container">
+            <h1 class="section-title">Contact Us</h1>
+            <p style="text-align: center; margin-bottom: 40px; font-size: 18px;">We're here to help with any questions about your New Zealand travel experience</p>
+            
+            <!-- Contact Form Section -->
+            <div class="contact-form-section">
+                <h2>Send Us a Message</h2>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="tour">Tour Interest</label>
+                        <select id="tour" name="tour">
+                            <option value="">Select a tour</option>
+                            <option value="north-classic">North Island Cultural Journey</option>
+                            <option value="south-nature">South Island Nature Experience</option>
+                            <option value="all-island">New Zealand Grand Tour</option>
+                            <option value="custom">Custom Tour</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="travel-date">Preferred Travel Date</label>
+                        <input type="date" id="travel-date" name="travel-date">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="travelers">Number of Travelers</label>
+                        <input type="number" id="travelers" name="travelers" min="1" max="20">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Your Message *</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Tell us about your travel preferences, questions, or special requirements..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-accent">Send Message</button>
+                </form>
+            </div>
+            
+            <div class="contact-section">
+                <div class="contact-methods">
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <h3>Phone Consultation</h3>
+                        <p>English Customer Service Hotline</p>
+                        <p style="font-size: 24px; font-weight: bold; color: var(--primary-color);">+64 9 123 4567</p>
+                        <p>Business Hours: Monday-Friday 9:00-18:00</p>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fab fa-weixin"></i>
+                        </div>
+                        <h3>WeChat Consultation</h3>
+                        <p>Scan to add travel consultant</p>
+                        <div class="wechat-code">
+                            <img src="QRcode.jpg" alt="WeChat QR Code">
+                        </div>
+                        <p>One-on-one professional consultation</p>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Email Contact</h3>
+                        <p>Send email to</p>
+                        <p style="font-size: 18px; color: var(--primary-color);">information@travelnz.com</p>
+                        <p>We will respond within 24 hours</p>
+                    </div>
+                </div>
+                
+                <div style="margin-top: 50px; text-align: center;">
+                    <h3 style="margin-bottom: 20px; color: var(--primary-color);">24 hours Emergency Contact</h3>
+                    <p style="font-size: 18px; margin-bottom: 10px;">For emergencies during your trip only</p>
+                    <p style="font-size: 20px; font-weight: bold;">+64 21 123 4567</p>
+                </div>
+            </div>
+            
+            <div class="trust-section">
+                <h2 class="section-title">Why Choose Us</h2>
+                <div class="trust-items">
+                    <div class="trust-item">
+                        <div class="trust-icon">
+                            <i class="fas fa-user-check"></i>
+                        </div>
+                        <h3>Certified Guides</h3>
+                        <p>All guides are officially certified with extensive experience</p>
+                    </div>
+                    <div class="trust-item">
+                        <div class="trust-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Comprehensive Safety</h3>
+                        <p>Complete insurance system and 24 hours emergency support</p>
+                    </div>
+                    <div class="trust-item">
+                        <div class="trust-icon">
+                            <i class="fas fa-credit-card"></i>
+                        </div>
+                        <h3>Flexible Payment</h3>
+                        <p>Support for multiple payment methods including installments</p>
+                    </div>
+                    <div class="trust-item">
+                        <div class="trust-icon">
+                            <i class="fas fa-file-contract"></i>
+                        </div>
+                        <h3>Visa Assistance</h3>
+                        <p>Visa application guidance and document preparation assistance</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Travel NZ</h3>
+                    <p>Specializing in providing professional, safe, and personalized New Zealand travel experiences for global visitors.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-weixin"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-phone-alt"></i> English Service: +64 9 123 4567</p>
+                    <p><i class="fas fa-clock"></i> Business Hours: Monday-Friday 9:00-18:00</p>
+                    <p><i class="fas fa-envelope"></i> Email: information@travelnz.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Address: 123 Queen Street, Auckland, New Zealand</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>WeChat Consultation</h3>
+                    <p>Scan to add travel consultant</p>
+                    <div class="wechat-code">
+                        <img src="QRcode.jpg" alt="WeChat QR Code">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>© 2025 Travel NZ All Rights Reserved | Officially Certified New Zealand Ground Operator</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating consultation button -->
+    <div class="float-button">
+        <i class="fab fa-weixin"></i>
+        WeChat
+    </div>
+
+    <script>
+        // 设置艺术感页眉渐变
+        function setArtisticHeader() {
+            const colors = [
+                '#A8BEDF', '#B7D5C6', '#A1C2B1', 
+                '#B7D5C6', '#C7D5E8', '#E8C49A', '#BA9B92'
+            ];
+            
+            // 随机打乱颜色数组
+            const shuffledColors = [...colors].sort(() => Math.random() - 0.5);
+            
+            // 创建渐变字符串
+            const gradient = `linear-gradient(135deg, 
+                ${shuffledColors[0]} 0%, 
+                ${shuffledColors[1]} 25%, 
+                ${shuffledColors[2]} 50%, 
+                ${shuffledColors[3]} 75%, 
+                ${shuffledColors[4]} 100%)`;
+            
+            // 应用到页眉
+            document.querySelector('header').style.background = gradient;
+            
+            // 为CONTACT页面添加艺术感背景（保持透明度）
+            const contactSections = document.querySelectorAll('.contact-form-section, .contact-section');
+            contactSections.forEach(section => {
+                section.style.background = gradient;
+                section.style.backgroundAttachment = 'fixed';
+                section.style.opacity = '0.9';
+            });
+        }
+
+        // 背景轮播功能
+        document.addEventListener('DOMContentLoaded', function() {
+            // 设置艺术感页眉和CONTACT页面背景
+            setArtisticHeader();
+            
+            const slides = document.querySelectorAll('.slide');
+            let currentSlide = 0;
+            
+            // 从localStorage获取上次的轮播索引，如果没有则从0开始
+            const savedSlideIndex = localStorage.getItem('currentSlideIndex');
+            if (savedSlideIndex !== null) {
+                currentSlide = parseInt(savedSlideIndex);
+                // 确保索引在有效范围内
+                if (currentSlide >= slides.length) {
+                    currentSlide = 0;
+                }
+                // 设置初始激活的幻灯片
+                slides.forEach((slide, index) => {
+                    slide.classList.remove('active');
+                    if (index === currentSlide) {
+                        slide.classList.add('active');
+                    }
+                });
+            }
+            
+            function nextSlide() {
+                slides[currentSlide].classList.remove('active');
+                currentSlide = (currentSlide + 1) % slides.length;
+                slides[currentSlide].classList.add('active');
+                
+                // 保存当前轮播索引到localStorage
+                localStorage.setItem('currentSlideIndex', currentSlide);
+            }
+            
+            // 每3秒切换一次背景
+            setInterval(nextSlide, 3000);
+            
+            // Simple form validation
+            document.getElementById('contactForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const message = document.getElementById('message').value;
+                
+                if (name && email && message) {
+                    alert('Thank you for your message! We will get back to you soon.');
+                    this.reset();
+                } else {
+                    alert('Please fill in all required fields.');
+                }
+            });
+            
+            // Navigation bar scroll effect
+            window.addEventListener('scroll', function() {
+                const header = document.querySelector('header');
+                if (window.scrollY > 50) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            });
+            
+            // 移动端菜单功能
+            const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+            const navLinks = document.querySelector('.nav-links');
+            
+            mobileMenuBtn.addEventListener('click', function() {
+                navLinks.classList.toggle('mobile-active');
+            });
+        });
+    </script>
+</body>
+</html>
